@@ -8,12 +8,15 @@ int main(void)
 {
 	int boo;
 
-	for (boo = '0'; boo <= '8'; boo++)
+	for (boo = '0'; boo <= '9'; boo++)
 	{
 		putchar (boo);
-		putchar (',');
-		putchar (' ');
+		if (boo < '9')
+		{
+			putchar (',');
+			putchar (' ');
+		}
 	}
-	putchar ('9');
+	putchar ('\n');
 	return (0);
 }
