@@ -1,18 +1,13 @@
 #include "main.h"
 /**
  * _abs - Task6
- *@oni: int
+ *@x: int
  *Return: always 0
  */
-int _abs(int oni)
+int _abs(int x)
 {
-	int chan;
-
-	chan = (oni * -1);
-
-	if (oni >= 0)
-		_putchar (oni);
+	if (x >= 0)
+		return (x);
 	else
-		_putchar (chan);
-	return (0);
+		return (x * -1);
 }
