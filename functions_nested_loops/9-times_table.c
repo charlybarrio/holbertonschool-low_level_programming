@@ -13,9 +13,22 @@ void times_table(void)
 	{
 		for (m = 0; m <= 9; m++)
 		{
-			_putchar (n * m + '0');
-			_putchar (',');
-			_putchar (' ');
+			int g = n * m;
+
+			if (g / 10 == 0)
+			{
+				_putchar (g % 10 + '0');
+				_putchar (',');
+				_putchar (' ');
+				_putchar (' ');
+			}
+			else
+			{
+				_putchar (g / 10 + '0');
+				_putchar (g % 10 + '0');
+				_putchar (',');
+				_putchar (' ');
+			}
 		}
 	_putchar ('\n');
 	}
