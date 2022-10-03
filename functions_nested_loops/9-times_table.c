@@ -15,19 +15,23 @@ void times_table(void)
 		{
 			int g = n * m;
 
-			if (g / 10 == 0)
+			if (m == 0)
 			{
-				_putchar (g % 10 + '0');
+				_putchar (g + '0');
+			}
+			else if (g / 10 == 0)
+			{
 				_putchar (',');
 				_putchar (' ');
 				_putchar (' ');
+				_putchar (g % 10 + '0');
 			}
 			else
 			{
-				_putchar (g / 10 + '0');
-				_putchar (g % 10 + '0');
 				_putchar (',');
 				_putchar (' ');
+				_putchar (g / 10 + '0');
+				_putchar (g % 10 + '0');
 			}
 		}
 	_putchar ('\n');
