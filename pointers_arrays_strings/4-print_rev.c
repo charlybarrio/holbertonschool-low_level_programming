@@ -10,11 +10,9 @@ void print_rev(char *s)
 	int l, a;
 
 	scanf("%c", s);
-	l= strlen(s);
-	for (a = l -1; a >= 0; a--)
+	l = strlen(s);
+	for (a = l - 1; a >= 0; a--)
 	{
-		printf("%c", s[a]);
-	_putchar ('\n');
+		printf("\n%c", s[a]);
 	}
-	
 }
