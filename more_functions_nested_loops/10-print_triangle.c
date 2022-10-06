@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  *print_triangle - Task10
- *
+ *@size: int
  * Return: always 0
  */
 void print_triangle(int size)
@@ -16,7 +16,7 @@ void print_triangle(int size)
 	{
 		for (a = 1; a <= size; a++)
 		{
-		       	for (c = a; c < size; c++)
+			for (c = a; c < size; c++)
 			{
 				_putchar (' ');
 			}
