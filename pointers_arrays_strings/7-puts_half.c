@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * puts_half - Task7
- *
+ *@str: int
  * Return: always 0
  */
 void puts_half(char *str)
