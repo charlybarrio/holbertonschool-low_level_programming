@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *_strcat
+ *_strcat - task0
  *@dest: char
  *@src: char
  *Return: always 0
