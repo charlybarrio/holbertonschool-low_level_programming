@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  **string_toupper - Task5
- *@*c: char
+ *@c: char
  *Return: always 0
  */
 char *string_toupper(char *c)
