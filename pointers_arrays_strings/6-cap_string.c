@@ -1,0 +1,19 @@
+#include "main.h"
+/**
+ **cap_string - task 6
+ *@c: char
+ *Return: always 0
+ */
+char *cap_string(char *c)
+{
+	int a;
+
+	for (a = 0; c[a] != '\0'; a++)
+	{
+		if ((c[a] == ' ' || c[a] == '\t' || c[a] == '\n' || c[a] == ',' || c[a] == ';' || c[a] == '.' || c[a] == '!' || c[a] == '?' || c[a] == '"' || c[a] == '(' || c[a] == ')' || c[a] == '{' || c[a] == '}') && (c[a] >= 'a' && c[a] <= 'z'))
+	{
+		c[a + 1] = c[a + 1] - 32;
+	}
+	}
+	return (c);
+}
