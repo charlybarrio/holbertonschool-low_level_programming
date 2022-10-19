@@ -7,22 +7,27 @@
  */
 int main(int argc, char *argv[])
 {
+	int t = 0;
+	int x;
+	int y;
+	int z;
 
-	int a, sum = 0;
-
-	if (argc < 1)
-		return (0);
-
-	for (a = 1; a < argc; a++)
+	for (z = 1; z < argc; z++)
 	{
-		if (!atoi(argv[a]))
+		t = atoi(argv[z]) + t;
+		printf("%d\n", t);
+		return(0);
+	}
+	for (x = 1; x < argc; x++)
+	{
+	for (y = 0; argv[x][y] != '\0'; y++)
+	{
+		if (argv[x][y] < 47 || argv[x][y] > 57)
 		{
-			printf("%s\n", "Error");
+			printf("Error\n");
 			return (1);
 		}
-		sum += atoi(argv[a]);
 	}
-	printf("%d\n", sum);
-
-	return (0);
+}
+return (0);
 }
