@@ -12,6 +12,9 @@ int main(int argc, char *argv[])
 	int y;
 	int z;
 
+	if (argc < 1)
+		return (0);
+
 	for (x = 1; x < argc; x++)
 	{
 		for (y = 0; argv[x][y] != '\0'; y++)
@@ -25,7 +28,13 @@ int main(int argc, char *argv[])
 	}
 	for (z = 1; z < argc; z++)
 	{
-		t = atoi(argv[z]) + t;
+		if (!atoi(argv[z]))
+		{
+		}
+		t += atoi(argv[z]);
 	}
+	printf("%d\n", t);
+
 	return (0);
 }
+
