@@ -8,7 +8,7 @@
 int main(int argc, char *argv[])
 {
 
-	int a, t = 0;
+	int a, sum = 0;
 
 	if (argc < 1)
 		return (0);
@@ -17,12 +17,12 @@ int main(int argc, char *argv[])
 	{
 		if (!atoi(argv[a]))
 		{
-			printf("Error\n");
+			printf("%s\n", "Error");
 			return (1);
 		}
-		t += atoi(argv[a]);
+		sum += atoi(argv[a]);
 	}
-	printf("%d\n", t);
+	printf("%d\n", sum);
 
 	return (0);
 }
