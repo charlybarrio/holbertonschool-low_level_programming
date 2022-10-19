@@ -12,22 +12,20 @@ int main(int argc, char *argv[])
 	int y;
 	int z;
 
+	for (x = 1; x < argc; x++)
+	{
+		for (y = 0; argv[x][y] != '\0'; y++)
+		{
+			if (argv[x][y] < 47 || argv[x][y] > 57)
+			{
+				printf("Error\n");
+				return (1);
+			}
+		}
+	}
 	for (z = 1; z < argc; z++)
 	{
 		t = atoi(argv[z]) + t;
-		printf("%d\n", t);
-		return(0);
 	}
-	for (x = 1; x < argc; x++)
-	{
-	for (y = 0; argv[x][y] != '\0'; y++)
-	{
-		if (argv[x][y] < 47 || argv[x][y] > 57)
-		{
-			printf("Error\n");
-			return (1);
-		}
-	}
-}
-return (0);
+	return (0);
 }
