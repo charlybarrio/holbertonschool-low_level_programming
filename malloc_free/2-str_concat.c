@@ -8,7 +8,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *s3, *s4, *s5;
-	unsigned int a, b;
+	unsigned int a, b, size;
 
 	if (s1 == NULL)
 	{
@@ -18,17 +18,15 @@ char *str_concat(char *s1, char *s2)
 	{
 		s1 = "";
 	}
-	else if (strlen(s1) == NULL || strlen(s2) == NULL)
-		return (NULL);
 	s3 = malloc(sizeof(char) * strlen(s1));
 	s4 = malloc(sizeof(char) * strlen(s2));
 	if (s3 == NULL)
         {
-                s3 = "";
+                return (NULL);
         }
         else if (s4 == NULL)
         {
-                s4 = "";
+                return (NULL);
         } 
 	for (a = 0; a <= strlen(s1); a++)
 	{
@@ -39,6 +37,8 @@ char *str_concat(char *s1, char *s2)
 	s4[b] = s2[b];
 	}
 	s5 = malloc(sizeof(char) * strlen(s1) - 4);
+	if (s5 == NULL)
+		return (NULL)
 	s5 = strcat(s3, s4);
 	return (s5);
 }
