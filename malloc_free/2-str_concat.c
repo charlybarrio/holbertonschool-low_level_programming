@@ -22,11 +22,11 @@ char *str_concat(char *s1, char *s2)
 	s4 = malloc(sizeof(char) * strlen(s2));
 	if (s3 == NULL)
 	{
-		return (s4);
+		return (s2);
 	}
 	else if (s4 == NULL)
 	{
-		return (s3);
+		return (s1);
 	}
 	for (a = 0; a <= strlen(s1); a++)
 	{
