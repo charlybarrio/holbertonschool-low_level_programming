@@ -12,15 +12,15 @@ char *str_concat(char *s1, char *s2)
 	unsigned int a;
 	unsigned int b;
 
-	 if (s3 == NULL)
+	 if (s1 == NULL)
         {
-                s3 = "";
+                s1 = "";
         }
-        else if (s4 == NULL)
+        else if (s2 == NULL)
         {
-                s4 = "";
+                s2 = "";
         }
-        else if (s3 == NULL && s4 == NULL)
+        else if (s1 == NULL && s2 == NULL)
         {
                 return (NULL);
         }
