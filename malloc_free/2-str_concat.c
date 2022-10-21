@@ -18,8 +18,10 @@ char *str_concat(char *s1, char *s2)
 	{
 		return ("");
 	}
+	else if (s1 == NULL && s2 == NULL)
+		return (NULL)
 	s3 = malloc(sizeof(char) * strlen(s1));
-	s4 = malloc(sizeof(char) * strlen(s2));
+	s4 = malloc(sizeof(char) * strlen(s2));i
 	for (a = 0; a <= strlen(s1); a++)
 	{
 	s3[a] = s1[a];
