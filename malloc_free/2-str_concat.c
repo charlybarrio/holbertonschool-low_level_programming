@@ -12,21 +12,21 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL)
 	{
-		return (s2);
+		return ("");
 	}
 	else if (s2 == NULL)
 	{
-		return (s1);
+		return ("");
 	}
 	s3 = malloc(sizeof(char) * strlen(s1));
 	s4 = malloc(sizeof(char) * strlen(s2));
 	if (s3 == NULL)
 	{
-		return (s2);
+		return ("");
 	}
 	else if (s4 == NULL)
 	{
-		return (s1);
+		return ("");
 	}
 	for (a = 0; a <= strlen(s1); a++)
 	{
