@@ -20,14 +20,6 @@ char *str_concat(char *s1, char *s2)
 	}
 	s3 = malloc(sizeof(char) * strlen(s1));
 	s4 = malloc(sizeof(char) * strlen(s2));
-	if (s3 == NULL)
-	{
-		return ("");
-	}
-	else if (s4 == NULL)
-	{
-		return ("");
-	}
 	for (a = 0; a <= strlen(s1); a++)
 	{
 	s3[a] = s1[a];
