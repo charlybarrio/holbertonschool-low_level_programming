@@ -22,11 +22,11 @@ char *str_concat(char *s1, char *s2)
 	s4 = malloc(sizeof(char) * strlen(s2));
 	if (s3 == NULL)
 	{
-		return (NULL);
+		return (s4);
 	}
 	else if (s4 == NULL)
 	{
-		return (NULL);
+		return (s3);
 	}
 	for (a = 0; a <= strlen(s1); a++)
 	{
@@ -36,7 +36,7 @@ char *str_concat(char *s1, char *s2)
 	{
 	s4[b] = s2[b];
 	}
-	s5 = malloc(sizeof(char) * strlen(s1) - 5);
+	s5 = malloc(sizeof(char) * strlen(s1) - 4);
 	s5 = strcat(s3, s4);
 	return (s5);
 }
