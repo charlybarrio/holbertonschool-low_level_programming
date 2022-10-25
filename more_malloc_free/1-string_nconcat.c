@@ -21,13 +21,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		s2 = "";
 	}
-	s3 = malloc(sizeof(char) * strlen(s1) - 1);
+	s3 = malloc(sizeof(char) * strlen(s1));
 	s4 = malloc(sizeof(char) * n + 1);
 	if (s3 != NULL && s4 != NULL)
 	{
-		for (a = 0; a < strlen(s1); a++)
+		for (a = 0; a <= strlen(s1); a++)
 			s3[a] = s1[a];
-		for (b = 0; b < n + 1; b++)
+		for (b = 0; b <= n + 1; b++)
 			s4[b] = s2[b];
 		s3 = strcat(s3, s4);
 		{
