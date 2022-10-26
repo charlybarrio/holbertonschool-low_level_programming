@@ -17,7 +17,7 @@ int *array_range(int min, int max)
 
 	if (!oni)
 		return (NULL);
-	for (chan = 0; chan <= max; chan++)
+	for (chan = 0; min <= max; chan++)
 		oni[chan] = min ++;
 	return (oni);
 }
