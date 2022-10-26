@@ -13,11 +13,11 @@ int *array_range(int min, int max)
 	if (min > max)
 		return (NULL);
 
-	oni = malloc(sizeof(int) * (max - min + 1));
+	oni = malloc(sizeof(int) * (max - min) + 1);
 
 	if (!oni)
 		return (NULL);
-	for (chan = min; chan <= max; chan++)
-		oni[chan] = min;
+	for (chan = 0; chan <= max; chan++)
+		oni[chan] = min ++;
 	return (oni);
 }
