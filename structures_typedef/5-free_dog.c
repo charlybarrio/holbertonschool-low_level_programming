@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *free_dog - frees dogs
+ *free_dog - task5
  *@d:dog_t
  *Return: always 0
  */
