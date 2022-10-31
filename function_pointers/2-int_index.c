@@ -4,6 +4,7 @@
  *@array:int
  *@size:int
  *@cmp:int
+ *Return:always 0
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
