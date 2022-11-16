@@ -2,8 +2,8 @@
 /**
  * add_node - function that adds a new node at the beginning of a list
  * @head: The first node
- * @str: The string 
- * Return; returns the adress of the new node.
+ * @str: The string
+ * Return: returns the adress of the new node.
  *
 **/
 list_t *add_node(list_t **head, const char *str)
