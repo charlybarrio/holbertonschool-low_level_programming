@@ -10,6 +10,8 @@ int linear_search(int *array, size_t size, int value)
 {
 	unsigned int a = 0;
 
+	if (array == NULL)
+		return (-1);
 	for (a = 0; a <= size -1; a++)
 	{
 		if (value == array[a])
